@@ -19,3 +19,10 @@ update animals set weight_in_kg = weight_in_kg * -1;
 rollback task_one
 update animals set  weight_in_kg = weight_in_kg * 1 where weight_in_kg <0;
 commit transaction 
+
+
+select count (name) from animals;
+select * from animals where escape_attempts =0; 
+select avg(weight_in_kg) from animals;
+select neutered, max(escape_attempts) from animals group by neutered;
+select name, ave(escape_attempts) from animals where date_of_birth BETWEEN '-1-1' AND '2000-12-31' group by name;
