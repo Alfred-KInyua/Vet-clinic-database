@@ -8,3 +8,14 @@ SELECT * FROM animals WHERE neutered = true;
 SELECT * FROM animals WHERE name NOT IN ('Gabumon');
 SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
 
+
+update animals set species = name where name like '%mon%'; 
+update animals set species = 'pokemon' where species is null;
+
+Begin transaction;
+delete from animals where date_of_birth > '2022-1-1';
+savepoint task_one;
+update animals set weight_in_kg = weight_in_kg * -1;
+rollback task_one
+update animals set  weight_in_kg = weight_in_kg * 1 where weight_in_kg <0;
+commit transaction 
