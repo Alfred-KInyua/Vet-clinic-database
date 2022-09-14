@@ -30,3 +30,25 @@ select name, avg(escape_attempts) from animals where date_of_birth BETWEEN '1990
 
 
 alter table animals drop species;
+
+SELECT * FROM animals INNER JOIN owners ON animals.owner_id = owners.id WHERE full_name = 'Melody Pond';
+SELECT * FROM animals INNER JOIN species ON animals.species_id = species.id WHERE species.name = 'Pokemon';
+SELECT * FROM owners FULL OUTER JOIN animals ON owners.id = animals.owner_id;
+SELECT species.name, COUNT(*) FROM animals INNER JOIN species ON animals.species_id = species.id GROUP BY species.name;
+
+SELECT animals.name, full_name, species.name FROM animals
+INNER JOIN owners
+ON animals.owner_id = owners.id
+INNER JOIN species
+ON animals.species_id = species.id
+WHERE full_name = 'Jennifer Orwell'
+AND species.name = 'Digimon';
+
+SELECT * FROM animals INNER JOIN owners ON animals.owner_id = owners.id WHERE full_name = 'Dean Winchester' AND escape_attempts = 0;
+
+SELECT full_name, COUNT(owner_id) FROM owners 
+INNER JOIN animals 
+ON owners.id = animals.owner_id
+GROUP BY full_name
+ORDER BY COUNT(owner_id) DESC
+LIMIT 1;
