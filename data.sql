@@ -46,3 +46,5 @@ update animals SET owner_id = 3 WHERE name IN ('Devimon', 'Plantmon');
 update animals SET owner_id = 4 WHERE name IN ('Charmander', 'Squirtle', 'Blossom');
 update animals SET owner_id = 5 WHERE name IN ('Angemon', 'Boarmon');
 
+update animals set species = name where name like '%mon%'; 
+update animals set species = 'pokemon' where species is null;
