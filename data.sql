@@ -25,3 +25,15 @@ insert into owners  (full_name,age)values('Bob',45);
 insert into owners  (full_name,age)values('Melody Pond',77);
 insert into owners  (full_name,age)values('Dean Winchester',14);
 insert into owners  (full_name,age)values('Jodie Whittaker',38);
+
+insert into animals (species_id) values(1);
+insert into animals (species_id) values(2);
+
+insert into owners(owner_id)values(1);
+insert into owners(owner_id)values(2);
+insert into owners(owner_id)values(3);
+insert into owners(owner_id)values(4);
+insert into owners(owner_id)values(5);
+insert into owners(owner_id)values(6);
+
+
