@@ -26,6 +26,9 @@ insert into owners  (full_name,age)values('Melody Pond',77);
 insert into owners  (full_name,age)values('Dean Winchester',14);
 insert into owners  (full_name,age)values('Jodie Whittaker',38);
 
+insert into species (name) values('Pokemon');
+insert into species (name) values('Digimon');
+
 insert into animals (species_id) values(1);
 insert into animals (species_id) values(2);
 
@@ -37,3 +40,8 @@ insert into owners(owner_id)values(5);
 insert into owners(owner_id)values(6);
 
 
+update animals SET owner_id = 1 WHERE name = 'Agumon';
+update animals SET owner_id = 2 WHERE name IN ('Gabumon', 'Pikachu');
+update animals SET owner_id = 3 WHERE name IN ('Devimon', 'Plantmon');
+update animals SET owner_id = 4 WHERE name IN ('Charmander', 'Squirtle', 'Blossom');
+update animals SET owner_id = 5 WHERE name IN ('Angemon', 'Boarmon');
