@@ -27,3 +27,6 @@ select avg(weight_in_kg) from animals;
 select name min(weight_in_kg) and max(weight_in_kg) from animals group by name;
 select neutered, max(escape_attempts) from animals group by neutered;
 select name, avg(escape_attempts) from animals where date_of_birth BETWEEN '1990-1-1' AND '2000-12-31' group by name;
+
+
+alter table animals drop species;
