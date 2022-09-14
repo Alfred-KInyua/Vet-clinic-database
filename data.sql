@@ -18,3 +18,10 @@ insert into animals(name, date_of_birth, escape_attempts, neutered,weight_in_kg)
 insert into animals(name, date_of_birth, escape_attempts, neutered,weight_in_kg)values('Boarmon','2005-6-7',7,true,20.4);
 insert into animals(name, date_of_birth, escape_attempts, neutered,weight_in_kg)values('Blossom','1998-10-13',3,true,17);
 insert into animals(name, date_of_birth, escape_attempts, neutered,weight_in_kg)values('Ditto','2022-5-14',4,true,22);
+
+insert into owners  (full_name,age)values('Sam Smith ',34);
+insert into owners  (full_name,age)values('Jennifer Orwell',19);
+insert into owners  (full_name,age)values('Bob',45);
+insert into owners  (full_name,age)values('Melody Pond',77);
+insert into owners  (full_name,age)values('Dean Winchester',14);
+insert into owners  (full_name,age)values('Jodie Whittaker',38);
