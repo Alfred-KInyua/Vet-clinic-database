@@ -56,3 +56,8 @@ select avg(weight_in_kg) from animals;
 select name min(weight_in_kg) and max(weight_in_kg) from animals group by name;
 select neutered, max(escape_attempts) from animals group by neutered;
 select name, avg(escape_attempts) from animals where date_of_birth BETWEEN '1990-1-1' AND '2000-12-31' group by name;
+
+insert into specializations(vet_id, species_id) values(1, 1);
+insert into specializations(vet_id, species_id) values(3, 2);
+insert into specializations(vet_id, species_id) values(3, 1);
+insert into specializations(vet_id, species_id) values(4, 2);
