@@ -69,3 +69,10 @@ WHERE specializations.vet_id IS NULL
 
 select species.name AS species_name, COUNT(*)  FROM visits INNER JOIN vets ON visits.vet_id = vets.id INNER JOIN animals ON visits.animal_id = animals.id
 INNER JOIN species ON animals.species_id = species.id WHERE vets.name = 'Maisy Smith' GROUP BY species.name
+
+
+/*append vets data*/
+insert into vets(name, age, date_of_graduation) values('William Tatcher', 45, '2000-04-23');
+insert into vets(name, age, date_of_graduation) values('Maisy Smith', 26, '2019-01-17');
+insert into vets(name, age, date_of_graduation) values('Stephanie Mendez', 64, '1981-05-04');
+insert into vets(name, age, date_of_graduation) values('Jack Harkness', 38, '2008-06-08');
