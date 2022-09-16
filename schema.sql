@@ -20,5 +20,12 @@ create table animals(
 	id SERIAL PRIMARY KEY,
 	name VARCHAR(80),
 	age int,
-	date_of_graduation date
+	date_of_graduation date);
+    CREATE TABLE specializations (
+	vet_id INTEGER REFERENCES vets(id),
+	species_id INTEGER REFERENCES species(id)
+);
+
+create table visits (vet_id int references vets(id),animal_id int references animals(id),date_of_visit date;
+);
 
