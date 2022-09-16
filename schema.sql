@@ -28,4 +28,4 @@ create table animals(
 
 create table visits (vet_id int references vets(id),animal_id int references animals(id),date_of_visit date;
 );
-
+create table specializations (vet_id int references vets(id),species_id int references species(id));
