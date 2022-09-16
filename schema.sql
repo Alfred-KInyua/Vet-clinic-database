@@ -16,3 +16,9 @@ create table animals(
  alter table animals add foreign key (species_id) references species;
  alter table animals add foreign key (owner_id) references owners;
 
+ CREATE TABLE vets (
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(80),
+	age int,
+	date_of_graduation date
+
