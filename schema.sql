@@ -53,3 +53,12 @@ CREATE INDEX visits_animal_id_idx ON visits (animal_id);
 -- after creating the index, the query execution time is Execution Time: 770.499 ms
 
 
+
+
+EXPLAIN ANALYZE SELECT * FROM visits WHERE vet_id = 2;
+-- the above query returns an execution time of 1060.80 ms
+
+CREATE INDEX visits_vet_id_idx ON visits (vet_id);
+-- after creating the index, the query  Execution Time: 799.856 ms
+ ms
+
