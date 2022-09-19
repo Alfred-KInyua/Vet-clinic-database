@@ -76,3 +76,16 @@ insert into vets(name, age, date_of_graduation) values('William Tatcher', 45, '2
 insert into vets(name, age, date_of_graduation) values('Maisy Smith', 26, '2019-01-17');
 insert into vets(name, age, date_of_graduation) values('Stephanie Mendez', 64, '1981-05-04');
 insert into vets(name, age, date_of_graduation) values('Jack Harkness', 38, '2008-06-08');
+
+
+-- performance tuning 
+
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
+
+EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
+
+EXPLAIN ANALYZE SELECT * FROM "Owners" where email = 'owner_18327@mail.com';
+
+CREATE INDEX animal_visits_index ON visits (id,animal_id);
+
+CREATE INDEX vet_visits_index ON visits (vet_id);
