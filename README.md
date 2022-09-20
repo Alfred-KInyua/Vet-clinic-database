@@ -1,5 +1,7 @@
 ## Vet Clinic Database.
 
+Vet Clinic is a relational database management web based application that tracks information about animals, their clinic visits and the details of the clinics employees who attended to them.
+
 This project has been developed using prostgres relational db
 
 ## Getting Started
@@ -14,9 +16,20 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 👤 **Author1**
 
+👤 **Alfred-KInyua**
+
 - GitHub: [@Alfred-KInyua](https://github.com/Alfred-KInyua)
 - Twitter: [@alfkinyua](https://twitter.com/alfkinyua)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/alfred-kinyua/)
+
+
+👤 **Author 2**
+
+👤 **Adebowale Adegboye**
+
+- GitHub: [@githubhandle](https://github.com/ademibowale)
+- Twitter: [@twitterhandle](https://twitter.com/Ademibowale1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/adebowale-adegboye-143568221/)
 
 ## 🤝 Contributing
 
