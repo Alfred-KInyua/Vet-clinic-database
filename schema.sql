@@ -67,6 +67,7 @@ EXPLAIN ANALYZE SELECT * FROM owners WHERE email = 'owner_18327@mail.com';
 
 CREATE INDEX owners_email_idx ON owners (email);
 -- after creating the index, the query eecution Time: 0.112 ms
+-- ERD
 
 
 
