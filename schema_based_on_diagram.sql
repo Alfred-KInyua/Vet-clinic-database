@@ -11,3 +11,10 @@ CREATE TABLE treatments_medical_histories(treatment_id int REFERENCES treatments
 
 -- Add relationships 
 ALTER TABLE medical_histories ADD CONSTRAINT fk_medical_histories FOREIGN KEY (customer_id) REFERENCES customers (id);
+-- Add indexes
+CREATE INDEX patient_idx ON medical_histories(patient_id);
+CREATE INDEX medical_history_idx ON invoices(medical_history_id);
+CREATE INDEX invoice_idx ON invoice_items(invoice_id);
+CREATE INDEX treatment_idx ON invoice_items(treatment_id);
+CREATE INDEX medical_history_index ON treatments_medical_histories(medical_id);
+CREATE INDEX treatment_index ON treatments_medical_histories(treatment_id);
