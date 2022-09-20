@@ -89,3 +89,5 @@ EXPLAIN ANALYZE SELECT * FROM "Owners" where email = 'owner_18327@mail.com';
 CREATE INDEX animal_visits_index ON visits (id,animal_id);
 
 CREATE INDEX vet_visits_index ON visits (vet_id);
+
+CREATE INDEX owners_email_idx ON owners (email);
